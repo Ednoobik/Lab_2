@@ -18,6 +18,8 @@ for node in elements:
                 if child.firstChild.nodeType == 3:
                     char_code = child.firstChild.data
     dictionary[name] = char_code
+name = input('Введите название валюты: ')
+print(f'Её буквенный код: {dictionary[name]}')
 xml_file.close()
 
 
